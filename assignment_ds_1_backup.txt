@@ -47,4 +47,3 @@ int main(){
 WAP to demonstrate the working of array
 
 
-https://docs.google.com/forms/d/1NFCZXBt03y8V_Yw7wZemCko09CzLF82h6AMvsp6fOlE/edit
