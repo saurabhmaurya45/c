@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Programming Question</title>
-    <link rel="stylesheet" href="style\bootstrap.min.css">
-    <link rel="stylesheet" href="style\programming.css">
-</head>
-<body>
-  <div class="jumbotron" 
-  style="">
-    <h2 style="font-family: algerian;
+    <link rel="stylesheet" href="style\bootstrap.min.css" />
+    <link rel="stylesheet" href="style\programming.css" />
+  </head>
+  <body>
+    <div class="jumbotron" style="">
+      <h2
+        style="font-family: algerian;
         font-size: 64px !important;
         color: red;
         text-align: center;
-        ">Solution for<br>
-      Problem Solving Trough Programming with C
-    </h2>
-  </div>
-	<div class="container">
-        <div class="jumbotron">
-           <h1>
-               Chapter: 01
-           </h1>
-<em><u>Problem No:1</u> <span>Ramesh’s basic salary is input through the keyboard. His
-dearness allowance is 40% of basic salary, and house rent
-allowance is 20% of basic salary. Write a program to calculate
- his gross salary.</span></em><br><br>
-<pre>#include &lt;stdio.h&gt;
+        "
+      >
+        Solution for<br />
+        Problem Solving Trough Programming with C
+      </h2>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>
+          Chapter: 01
+        </h1>
+        <em
+          ><u>Problem No:1</u>
+          <span
+            >Ramesh’s basic salary is input through the keyboard. His dearness
+            allowance is 40% of basic salary, and house rent allowance is 20% of
+            basic salary. Write a program to calculate his gross salary.</span
+          ></em
+        ><br /><br />
+        <pre>
+#include &lt;stdio.h&gt;
 int main(){
   float sal;
   scanf("%f",&sal);
@@ -34,12 +41,19 @@ int main(){
   float gross_sal=sal+allowance+rent;
   printf("The gross salary of Ramesh is:%f\n",gross_sal);
   return 0;
-}</pre><hr>
+}</pre
+        >
+        <hr />
 
-<em><u>Problem No:2</u> <span>The distance between two cities (in km.) is input through the
-keyboard. Write a program to convert and print this distance
-in meters, feet, inches and centimeters.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:2</u>
+          <span
+            >The distance between two cities (in km.) is input through the
+            keyboard. Write a program to convert and print this distance in
+            meters, feet, inches and centimeters.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   float dist;
@@ -56,13 +70,20 @@ int main(){
   printf("The distance in centimeters:%fcm\n", centimeters);
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:3</u> <span>If the marks obtained by a student in five different subjects
-are input through the keyboard, find out the aggregate marks
-and percentage marks obtained by the student. Assume that
-the maximum m.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:3</u>
+          <span
+            >If the marks obtained by a student in five different subjects are
+            input through the keyboard, find out the aggregate marks and
+            percentage marks obtained by the student. Assume that the maximum
+            m.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int mathematics,English,Science,social_science,computer_science;
@@ -85,12 +106,19 @@ int main(){
   printf("Aggregate Marks obtained:%d",aggregateMarks);
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:4</u>
+          <span
+            >Temperature of a city in Fahrenheit degrees is input through the
+            keyboard. Write a program to convert this temperature into
+            Centigrade degrees.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   float Fahrenheit;
@@ -100,15 +128,20 @@ int main(){
   printf("The temperature in Centigrade:%f\n",Centigrade );
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:5</u> <span>
-The length & breadth of a rectangle and radius of a circle are
-input through the keyboard. Write a program to calculate the
-area & perimeter of the rectangle, and the area &
-circumference of the circle.
-</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:5</u>
+          <span>
+            The length & breadth of a rectangle and radius of a circle are input
+            through the keyboard. Write a program to calculate the area &
+            perimeter of the rectangle, and the area & circumference of the
+            circle.
+          </span></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int length,breadth,radius;
@@ -125,12 +158,18 @@ int main(){
   printf("Circumference of Circle:%f",CircumferenceofCircle);
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:6</u> <span>Two numbers are input through the keyboard into two
-locations C and D. Write a program to interchange the
-contents of C and D.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:6</u>
+          <span
+            >Two numbers are input through the keyboard into two locations C and
+            D. Write a program to interchange the contents of C and D.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int c,d;
@@ -144,12 +183,19 @@ int main(){
   printf("Swaped values are: %d %d\n",c,d );
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:7</u> <span>If a five-digit number is input through the keyboard, write a
-program to calculate the sum of its digits.
-(Hint: Use the modulus operator ‘%’)</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:7</u>
+          <span
+            >If a five-digit number is input through the keyboard, write a
+            program to calculate the sum of its digits. (Hint: Use the modulus
+            operator ‘%’)</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int number;
@@ -163,11 +209,18 @@ int main(){
   printf("The sum of digit is:%d\n",sum);
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:8</u> <span>If a five-digit number is input through the keyboard, write a
-program to reverse the number.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:8</u>
+          <span
+            >If a five-digit number is input through the keyboard, write a
+            program to reverse the number.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   /*Declaring and initializing variables*/
@@ -209,10 +262,18 @@ int main(){
 
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:9</u> <span>This program takes a four-digit integer from user, and shows sum of first and last digit.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:9</u>
+          <span
+            >This program takes a four-digit integer from user, and shows sum of
+            first and last digit.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   /*Declaring and initializing variables*/
@@ -252,10 +313,20 @@ int main(){
     printf("\n\n   Sum of %d and %d is: %d",dig4,dig1,sum);
     return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:10</u> <span>A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:10</u>
+          <span
+            >A cashier has currency notes of denominations 10, 50 and 100. If
+            the amount to be withdrawn is input through the keyboard in
+            hundreds, find the total number of currency notes of each
+            denomination the cashier will have to give to the withdrawer.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int amount;
@@ -277,10 +348,21 @@ int main(){
 
     return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:11</u> <span>In a town, the percentage of men is 52. The percentage of total literacy is 48. If total percentage of literate men is 35 of the total population, write a program to find the total number of illiterate men and women if the population of the town is 80,000.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:11</u>
+          <span
+            >In a town, the percentage of men is 52. The percentage of total
+            literacy is 48. If total percentage of literate men is 35 of the
+            total population, write a program to find the total number of
+            illiterate men and women if the population of the town is
+            80,000.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int pop, popmen, popwomen, poplit, poilit, litmen, ilitmen, litwomen, ilitwomen;
@@ -320,10 +402,19 @@ int main(){
     printf("Illiterate population of women   :\t%d\n\n",ilitwomen);
     return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:12</u> <span>If the total selling price of 15 items and the total profit earned on them is input through the keyboard, write a program to find the cost price of one item.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:12</u>
+          <span
+            >If the total selling price of 15 items and the total profit earned
+            on them is input through the keyboard, write a program to find the
+            cost price of one item.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   float cost, sale, costitem, profit;
@@ -343,11 +434,20 @@ int main(){
    
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:13</u> <span>If a five-digit number is input through the keyboard, write a program to print a new number by adding one to each of its digits. For example if the number that is input is 12391 then the output should be displayed as 23402.
-</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:13</u>
+          <span
+            >If a five-digit number is input through the keyboard, write a
+            program to print a new number by adding one to each of its digits.
+            For example if the number that is input is 12391 then the output
+            should be displayed as 23402.
+          </span></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   /*Declaring and initializing variables*/
@@ -386,21 +486,28 @@ int main(){
    
     return 0;
 }
-</pre><hr>
-  </div>
-</div>
-<!--END-->
-<!--===================================================-->
-<!--Chapter:2 -->
-<div class="container">
-  <div class="jumbotron">
-    <h1>Chapter: 02</h1>
+</pre
+        >
+        <hr />
+      </div>
+    </div>
+    <!--END-->
+    <!--===================================================-->
+    <!--Chapter:2 -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Chapter: 02</h1>
 
-<em><u>Problem No:1</u> <span>If cost price and selling price of an item is input through the
-keyboard, write a program to determine whether the seller has
-made profit or incurred loss. Also determine how much profit
-he made or loss he incurred.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:1</u>
+          <span
+            >If cost price and selling price of an item is input through the
+            keyboard, write a program to determine whether the seller has made
+            profit or incurred loss. Also determine how much profit he made or
+            loss he incurred.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int cp,sp;
@@ -417,12 +524,18 @@ int main(){
 
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:2</u> <span>Any integer is input through the keyboard. Write a program to
-find out whether it is an odd number or even number.
-</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:2</u>
+          <span
+            >Any integer is input through the keyboard. Write a program to find
+            out whether it is an odd number or even number.
+          </span></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int x ; 
@@ -435,12 +548,19 @@ int main(){
    }
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:3</u> <span>Any year is input through the keyboard. Write a program to
-determine whether the year is a leap year or not.
-(Hint: Use the % (modulus) operator)</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:3</u>
+          <span
+            >Any year is input through the keyboard. Write a program to
+            determine whether the year is a leap year or not. (Hint: Use the %
+            (modulus) operator)</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int year;
@@ -453,12 +573,18 @@ int main(){
    }
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:4</u> <span>If the ages of Ram, Shyam and Ajay are input through the
-keyboard, write a program to determine the youngest of the
-three.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:4</u>
+          <span
+            >If the ages of Ram, Shyam and Ajay are input through the keyboard,
+            write a program to determine the youngest of the three.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int ram,shyam,ajay;
@@ -477,13 +603,20 @@ int main(){
   
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:5</u> <span>Write a program to check whether a triangle is valid or not,
-when the three angles of the triangle are entered through the
-keyboard. A triangle is valid if the sum of all the three angles
-is equal to 180 degrees.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:5</u>
+          <span
+            >Write a program to check whether a triangle is valid or not, when
+            the three angles of the triangle are entered through the keyboard. A
+            triangle is valid if the sum of all the three angles is equal to 180
+            degrees.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int angle1,angle2,angle3;
@@ -496,11 +629,18 @@ int main(){
   }
   return 0;
 }
-</pre><hr>
-   
-<em><u>Problem No:6</u> <span>Find the absolute value of a number entered through the
-keyboard.</span></em><br><br>
-<pre>
+</pre
+        >
+        <hr />
+
+        <em
+          ><u>Problem No:6</u>
+          <span
+            >Find the absolute value of a number entered through the
+            keyboard.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int x;
@@ -514,13 +654,20 @@ int main(){
   printf("The absolute value of %d is %d\n",x,temp );
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:7</u> <span>Given the length and breadth of a rectangle, write a program to
-find whether the area of the rectangle is greater than its
-perimeter. For example, the area of the rectangle with length = 5
-and breadth = 4 is greater than its perimeter</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:7</u>
+          <span
+            >Given the length and breadth of a rectangle, write a program to
+            find whether the area of the rectangle is greater than its
+            perimeter. For example, the area of the rectangle with length = 5
+            and breadth = 4 is greater than its perimeter</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int length,breadth;
@@ -535,13 +682,20 @@ int main(){
   }
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:8</u> <span>According to the Gregorian calendar, it was Monday on the
-date 01/01/1900. If any year is input through the keyboard
-write a program to find out what is the day on 1st January of
-this year.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:8</u>
+          <span
+            >According to the Gregorian calendar, it was Monday on the date
+            01/01/1900. If any year is input through the keyboard write a
+            program to find out what is the day on 1st January of this
+            year.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   int year,BasicYear=1900,NoofYears;
@@ -587,12 +741,19 @@ int main(){
 
   return 0;
 }
-</pre><hr>
+</pre
+        >
+        <hr />
 
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
+        <em
+          ><u>Problem No:4</u>
+          <span
+            >Temperature of a city in Fahrenheit degrees is input through the
+            keyboard. Write a program to convert this temperature into
+            Centigrade degrees.</span
+          ></em
+        ><br /><br />
+        <pre>
 #include &lt;stdio.h&gt;
 int main(){
   float Fahrenheit;
@@ -602,1072 +763,10 @@ int main(){
   printf("The temperature in Centigrade:%f\n",Centigrade );
   return 0;
 }
-</pre><hr>
-<!--start from here--<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>
-
-<em><u>Problem No:4</u> <span>Temperature of a city in Fahrenheit degrees is input through
-the keyboard. Write a program to convert this temperature
-into Centigrade degrees.</span></em><br><br>
-<pre>
-#include &lt;stdio.h&gt;
-int main(){
-  float Fahrenheit;
-  printf("Enter the temperature in Fahrenheit:");
-  scanf("%f",&Fahrenheit);
-  float Centigrade=(Fahrenheit-32)*5/9;
-  printf("The temperature in Centigrade:%f\n",Centigrade );
-  return 0;
-}
-</pre><hr>        
-        </div>
+</pre
+        >
+        <hr />
+      </div>
     </div>
-</body>
+  </body>
 </html>
