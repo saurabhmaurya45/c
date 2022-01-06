@@ -1,0 +1,1 @@
+// WAP to check whether an integer is armstrong number or not

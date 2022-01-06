@@ -1,0 +1,1 @@
+// How to check whether a number is small letter, capital letter, a number or  special symbol

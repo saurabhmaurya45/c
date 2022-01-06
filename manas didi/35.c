@@ -1,0 +1,1 @@
+// WAP to print duplicate character from string

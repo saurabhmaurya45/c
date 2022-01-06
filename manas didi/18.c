@@ -1,0 +1,1 @@
+// How to check if a number is binary or not

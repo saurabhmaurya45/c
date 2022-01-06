@@ -1,0 +1,1 @@
+// WAP to count the no of vowel and consonent in a stirng

@@ -1,0 +1,50 @@
+WAP to convert decimal number into binary using recursion
+
+void bin(int n){
+    if (n==0)
+    {
+        return;
+    }
+    else{
+        bin(n/2);
+        int rem=n%2;
+        printf("%d",rem );
+    }
+}
+
+//__main__
+int main(){
+    int n;
+    printf("Enter number to convert it into binary\n");
+    scanf("%d",&n);
+    bin(n);
+    return 0;
+}
+
+
+WAP to check whether a number is palindrame or not
+
+int main(){
+    int n,sum=0,r;
+    printf("Enter number to check whether it is palindrome or not\n");
+    scanf("%d",&n);
+    int temp= n;
+    while(n>0){
+        r=n%10;
+        sum=(sum*10)+r;
+        n=n/10;
+    }
+    if (temp==sum)
+    {
+        printf("%d is palindrome\n",temp );
+    }
+    else{
+        printf("%d is not a palindrome\n",temp );
+    }    
+    return 0;
+}
+
+WAP to demonstrate the working of array
+
+
+https://docs.google.com/forms/d/1NFCZXBt03y8V_Yw7wZemCko09CzLF82h6AMvsp6fOlE/edit

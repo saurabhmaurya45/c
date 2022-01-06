@@ -1,0 +1,1 @@
+// How a number is vowel or consonent
