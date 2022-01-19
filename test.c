@@ -5,6 +5,7 @@ program to check if all the three points fall on one straight line.
 
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 /*
 int main(){
     int i,j,k;
@@ -114,7 +115,7 @@ int main(){
     }
     return 0;
 }*/
-
+/*
 
 int main(){
     int arr[10]={10,20,30,40,50},n=5,item,pos;
@@ -133,6 +134,18 @@ int main(){
     for(int i=0; i<n;i++){
         printf("%d  \n", arr[i]);
     }
+
+    return 0;
+}*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int arr[]={1,1,2,4,5,2,5,47,5,2,2,15,1,1,8,1,212,1,52,1,15,15,1,12,12};
+
+
+   
 
     return 0;
 }

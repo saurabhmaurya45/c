@@ -5,7 +5,7 @@ int main(){
     int number;
     printf("Enter number to check whether it is odd or even: ");
     scanf("%d",&number);
-    int flag=0;
+
     if((number&1)==1){
         printf("%d is odd",number);
     }
