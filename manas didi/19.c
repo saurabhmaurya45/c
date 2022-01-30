@@ -1,1 +1,1 @@
-// WAP to reverse and integer
+// WAP to reverse an integer
