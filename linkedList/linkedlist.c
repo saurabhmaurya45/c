@@ -72,6 +72,11 @@ void delete_beginning(){
 		printf("Underflow\n");
 		return;
 	}
+	else if(first -> next == NULL){
+		printf("%d deleted successfully\n", first -> data);
+		free(first);
+		return;
+	}
 	ptr = first;
 	printf("%d deleted successfully\n", ptr -> data);
 	first = first -> next;
@@ -86,16 +91,23 @@ void delete_middle(){
 		printf("Underflow\n");
 		return;
 	}
-	cpt = first;
-	printf("Data you want to delete: ");
-	scanf("%d", &to_delete);
-	while(cpt -> data != to_delete){
-		ptr = cpt;
-		cpt = cpt -> next; 
+	else if(first -> next == NULL){
+		printf("%d deleted successfully\n", first -> data);
+		free(first);
+		return;
 	}
-	ptr -> next = cpt -> next;
-	printf("%d deleted successfully\n", cpt -> data);
-	free(cpt);
+	else{
+		cpt = first;
+		printf("Data you want to delete: ");
+		scanf("%d", &to_delete);
+		while(cpt -> data != to_delete){
+			ptr = cpt;
+			cpt = cpt -> next; 
+		}
+		ptr -> next = cpt -> next;
+		printf("%d deleted successfully\n", cpt -> data);
+		free(cpt);
+	}
 }
 
 //deletion at the end
@@ -105,14 +117,21 @@ void delete_end(){
 		printf("Underflow\n");
 		return;
 	}
-	cpt = first;
-	while(cpt -> next !=NULL){
-		ptr = cpt;
-		cpt = cpt -> next;
+	else if(first -> next == NULL){
+		printf("%d deleted successfully\n", first -> data);
+		free(first);
+		return;
 	}
-	ptr -> next = NULL;
-	printf("%d deleted successfully\n", cpt -> data);
-	free(cpt);
+	else{
+		cpt = first;
+		while(cpt -> next !=NULL){
+			ptr = cpt;
+			cpt = cpt -> next;
+		}
+		ptr -> next = NULL;
+		printf("%d deleted successfully\n", cpt -> data);
+		free(cpt);	
+	}
 }
 
 // traversing
@@ -120,7 +139,7 @@ void traversing(){
 	struct node *ptr;
 	if(first ==NULL){
 		printf("Underflow\n");
-		return;
+		return;	
 	}
 	ptr = first;
 	int count = 1;
@@ -144,11 +163,73 @@ void search(){
 	printf("Enter element you want to search: ");
 	scanf("%d", &element);
 	ptr = first;
-	while(ptr -> data != element){
+	while(ptr -> next != NULL){
+		if(ptr -> data == element){
+			printf("%d is at position %d\n", ptr -> data, count);
+			return;
+		}
 		count++;
 		ptr = ptr -> next;
 	}
-	printf("%d isat position %d\n", ptr -> data, count);
+	printf("%d is not present in linkedlist\n",element);
+	return;
+}
+
+//reverse the linkedlist
+void reverse(){
+	struct node *curr,*prev,*nxt;
+	prev = NULL;
+	curr = first;
+	nxt = NULL;
+	if (first == NULL)
+	{
+		printf("Underflow\n");
+		return;
+	}
+	while(curr != NULL){
+		nxt = curr -> next;
+		curr -> next = prev;
+		prev = curr;
+		curr = nxt; 
+	}
+	first = prev;
+}
+
+//swap function
+void swap(struct node *a, struct node *b){
+	int temp = a -> data;
+	a -> data = b -> data;
+	b -> data = temp;
+}
+
+//sorting using bubble sort
+void bubbleSort(){
+	int swapped = 0 ;
+	struct node *ptr_i = NULL,*ptr_j;
+	if (first == NULL)
+	{
+		printf("no element to sort");
+		return;
+	}
+	do{
+		swapped = 0;
+		ptr_j = first;
+		while(ptr_j -> next != ptr_i){
+			if (ptr_j -> data > ptr_j -> next -> data)	
+			{
+				swap(ptr_j, ptr_j -> next);
+				swapped = 1;
+			}
+			ptr_j = ptr_j -> next;
+		}
+		ptr_i = ptr_j;
+
+	}while(swapped);
+}
+
+//sorting using insertion sort
+void insertionSort(){
+	
 }
 
 //menu
@@ -156,7 +237,7 @@ void menu(){
 	printf("\t====================================\n");
 	printf("\t\tLinked list operation\n\n");
 	printf("\t====================================\n");
-	printf("\t1: Insert at beginning\n\t2: Insert at a specific position\n\t3: Insert at end \n\t4: Delete at beginning\n\t5: Delete at middle\n\t6: Delete at end\n\t7: Traverse\n\t8: Search\n\t9:Exit");
+	printf("\t1: Insert at beginning\n\t2: Insert at a specific position\n\t3: Insert at end \n\t4: Delete at beginning\n\t5: Delete at middle\n\t6: Delete at end\n\t7: Traverse\n\t8: Search\n\t9: Reverse\n\t10: Sort Using Bubble Sort\n\t11:Exit");
 	return;
 }
 
@@ -166,7 +247,7 @@ void cases(){
 	printf("\nEnter choice form menu\n");
 	do{
 		scanf("%d", &choice);
-		if(choice<1 || choice >9){
+		if(choice<1 || choice >11){
 			printf("Wrong choice!!  Try Again\n");
 			continue;
 		}
@@ -211,8 +292,18 @@ void cases(){
 				printf("Next choice\n");
 				break;
 			}
+			case 9:{
+				reverse();
+				printf("Next choice\n");
+				break;
+			}
+			case 9:{
+				bubbleSort();
+				printf("Next choice\n");
+				break;
+			}
 		}
-	}while(choice!=9);	
+	}while(choice!=11);	
 }
 
 int main(){
